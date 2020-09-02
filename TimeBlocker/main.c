@@ -67,7 +67,7 @@ int main() {
 
                 contr = 0;
             }
-            if (hrs == 1)
+            if (hrs == 1 && startIs12 == 0)
                 contr = 1;
             // printing logic
 
@@ -85,6 +85,8 @@ int main() {
 
         if (hrs != hrs2)
             startIsSame = 0;
+        if (hrs != 12)
+            startIs12 = 0;
 
     }
 
